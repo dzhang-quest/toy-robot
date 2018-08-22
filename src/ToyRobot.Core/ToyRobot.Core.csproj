@@ -40,6 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\CommandFactory.cs" />
+    <Compile Include="Commands\DumbCommand.cs" />
+    <Compile Include="Commands\PlaceCommand.cs" />
+    <Compile Include="Commands\ReportCommand.cs" />
+    <Compile Include="Commands\MoveCommand.cs" />
+    <Compile Include="Commands\TurnCommand.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
