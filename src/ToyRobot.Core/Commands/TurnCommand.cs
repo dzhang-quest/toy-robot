@@ -15,11 +15,22 @@ namespace ToyRobot.Commands
         };
 
         public bool IsLeft { get; }
-        public bool IsRight { get => !IsLeft; }
 
         public TurnCommand(bool isLeft)
         {
             IsLeft = isLeft;
+        }
+
+        public override void Do(Context ctx)
+        {
+            if (IsLeft)
+            {
+                ctx.Robert.TurnLeft();
+            }
+            else
+            {
+                ctx.Robert.TurnRight();
+            }
         }
     }
 }

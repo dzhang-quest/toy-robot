@@ -10,5 +10,7 @@ namespace ToyRobot.Commands
     public sealed class DumbCommand: Command
     {
         internal readonly static Func<string, Command> Parse = commandLine => { return new DumbCommand(); };
+
+        public override void Do(Context ctx) { }
     }
 }

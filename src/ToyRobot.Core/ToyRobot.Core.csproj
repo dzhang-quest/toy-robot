@@ -47,6 +47,7 @@
     <Compile Include="Commands\ReportCommand.cs" />
     <Compile Include="Commands\MoveCommand.cs" />
     <Compile Include="Commands\TurnCommand.cs" />
+    <Compile Include="Context.cs" />
     <Compile Include="Direction.cs" />
     <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

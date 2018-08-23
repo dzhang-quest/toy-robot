@@ -36,5 +36,10 @@ namespace ToyRobot.Commands
             Position = location;
             Direction = direction;
         }
+
+        public override void Do(Context ctx)
+        {
+            ctx.Robert.Place(Position, Direction);
+        }
     }
 }

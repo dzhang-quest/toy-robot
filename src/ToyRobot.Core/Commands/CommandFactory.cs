@@ -13,7 +13,7 @@ namespace ToyRobot.Commands
             DumbCommand.Parse,
         };
 
-        internal static Command Parse(string commandLine)
+        public static Command Parse(string commandLine)
         {
             return parsers
                 .Select(parse => parse(commandLine))

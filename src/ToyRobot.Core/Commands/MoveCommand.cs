@@ -11,5 +11,10 @@ namespace ToyRobot.Commands
 
             return null;
         };
+
+        public override void Do(Context ctx)
+        {
+            ctx.Robert.Move();
+        }
     }
 }
